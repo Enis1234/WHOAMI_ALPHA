@@ -12,20 +12,21 @@ router.get('/stuff', function(req, res, next) {
         console.log("person is reset")
     }
     if(persons == null) {*/
-        var  parms = req.query.
+       //var  parms = req.query.
         //var lo = req.query._id[0];
-        console.log(" test "+ parms );
+       // console.log(" test "+ parms );
        // console.log1(lo);
         //var searchid = req.query.searchid;
        // console.log(searchid);
        // var myObjectId = require('mongoose').Types.ObjectId("name");
-        Stuff.find({'name': '','':''}, function (err, docs) {
+        Stuff.find({'name': ''}, function (err, docs) {
             if (err)
                 console.log('error occured in the database');
             console.log(docs);
-            console.log(value);
+           // console.log(value);
            // console.log(searchidid);
         });
+        res.send("API GET");
    /* }
     else{
        // persons.find();
