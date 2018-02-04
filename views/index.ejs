@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/responsive.css">
+      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <section class="banner" role="banner">
+    <div class="banner-area">
+      <!-- overlay -->
+      <div class="banner-area-gradient"></div>
+      <!-- overlay -->
+      <div class="inner-bg">
+        <div class="container">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="banner-text text-center"> <a class="logo" href="#">Who Am I ?</a>
+              <h1>Die Website die sowas ist,<br><br>Wie die App Aktionator.</h1>
+              <br>
+              <br>
+              <a href="app" class="btn">Lass uns starten !</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="app" class="section">
+  </section>
+  <body>
+  <!-- React -->
+  <script type="text/babel">
+      fetch('/api/stuff?lol=').then(function (data) {
+          return data.json();
+      }).then(json => {
+          this.setState({
+              stuff: json
+          });
+      })
+  </script>
+  </body>
+  <!-- Footer section -->
+  <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col col-md-5">
+                  <p>Copyright © 2018 Endliss Developments. All Rights Reserved.</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- footer top -->
+
+  </footer>
+</html>
